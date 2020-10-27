@@ -1,9 +1,9 @@
 import * as $ from 'jquery';
 
-function createAnalytics() {
+function createAnalytics(): object {
     let counter = 0;
-    let isDestroy = false;
-    const listener = () => counter++;
+    let isDestroy: boolean = false;
+    const listener = (): number => counter++;
 
     $(document).on('click', listener);
 
@@ -22,4 +22,4 @@ function createAnalytics() {
     };
 }
 
-window.analytics = createAnalytics();
+window['analytics'] = createAnalytics();
