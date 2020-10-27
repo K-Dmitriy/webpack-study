@@ -4,6 +4,7 @@ import './style/style.css';
 import './style/less.less';
 import './style/scss.scss';
 import WebpackLogo from '@/assets/webpack-logo';
+import './babel';
 // import json from './assets/json';
 // import xml from './assets/data.xml';
 // import csv from './assets/data.csv';
